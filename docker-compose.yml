@@ -1,0 +1,8 @@
+ovirt-kibana:
+  image: ovirt-kibana
+  ports:
+    - "5601:5601"
+    - "9200:9200"
+    - "5044:5044"
+  volumes:
+    - "/var/log/ovirt-engine:/var/log/ovirt-engine"
