@@ -1,4 +1,4 @@
-FROM docker.io/sebp/elk
+FROM docker.io/sebp/elk:5.1.1
 
 MAINTAINER rgolan@redhat.com
 

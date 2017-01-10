@@ -26,7 +26,7 @@ docker-compose up
 - set kibana's index
 ```
 curl -XPUT http://localhost:9200/.kibana/index-pattern/*metadata* -d '{"title" : "*metadata*",  "timeFieldName": "@timestamp"}'
-curl -XPUT http://localhost:9200/.kibana/config/5.0.1 -d '{"defaultIndex" : "*metadata*"}'
+curl -XPUT http://localhost:9200/.kibana/config/5.1.1 -d '{"defaultIndex" : "*metadata*"}'
  ```
 - Browse to http://127.0.0.1:5601
 - Import [kibana] settings from the file under the repo
