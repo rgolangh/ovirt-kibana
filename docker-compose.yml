@@ -1,8 +1,9 @@
 ovirt-kibana:
-  image: ovirt-kibana
+  image: docker.io/sebp/elk:511
   ports:
     - "5601:5601"
     - "9200:9200"
     - "5044:5044"
   volumes:
     - "/var/log/ovirt-engine:/var/log/ovirt-engine"
+    - "./ovirt-logstash.conf:/etc/logstash/conf.d/10-ovirt-logstash.conf"

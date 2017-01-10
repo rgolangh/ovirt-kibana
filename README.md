@@ -9,9 +9,7 @@ file and a ready to use kibana visualization configuration file to get immediate
 # Install
 - Clone it to ovirt-engine machine
 ```
-git clone git@github.com:rgolangh/ovirt-kibana.git
-cd ovirt-kibana
-docker build .
+git clone git@github.com:rgolangh/ovirt-kibana.git && cd ovirt-kibana
 ```
 - Set the vm.max_map_count high enough for [Elasticsearch][elastic]
 ```
