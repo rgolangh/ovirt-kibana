@@ -23,8 +23,7 @@ docker-compose up
 - Wait till the console would show Elasticsearch loads
 - set kibana's index
 ```
-curl -XPUT http://localhost:9200/.kibana/index-pattern/*metadata* -d '{"title" : "*metadata*",  "timeFieldName": "@timestamp"}'
-curl -XPUT http://localhost:9200/.kibana/config/5.1.1 -d '{"defaultIndex" : "*metadata*"}'
+./kibana-config.sh
  ```
 - Browse to http://127.0.0.1:5601
 - Import [kibana] settings from the file under the repo
@@ -32,6 +31,8 @@ curl -XPUT http://localhost:9200/.kibana/config/5.1.1 -d '{"defaultIndex" : "*me
   - Click `Manage Visualizations` on the right
   - Import the file 'ovirt-engine-kibana-export.json'
 
+# TODO
+- Make kibana-config import the visualization settings
 
 [ovirt]: https://www.ovirt.org/
 [elk]: https://www.google.co.il/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjUiJGY1LLRAhUHahoKHanuAv8QFggnMAA&url=https%3A%2F%2Felk-docker.readthedocs.io%2F&usg=AFQjCNHKHyjpB7Y-2kfWWOLaWT01t7EQlA&sig2=KVJox-8UsuFoa6DEweiDaQ
