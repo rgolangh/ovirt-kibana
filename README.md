@@ -33,6 +33,9 @@ docker-compose up
 
 # TODO
 - Make kibana-config import the visualization settings
+- Add A screenshot of kibana
+- Add forwarding examples for VDSM
+- Add logstash configuration for vdsm logs
 
 [ovirt]: https://www.ovirt.org/
 [elk]: https://www.google.co.il/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjUiJGY1LLRAhUHahoKHanuAv8QFggnMAA&url=https%3A%2F%2Felk-docker.readthedocs.io%2F&usg=AFQjCNHKHyjpB7Y-2kfWWOLaWT01t7EQlA&sig2=KVJox-8UsuFoa6DEweiDaQ
